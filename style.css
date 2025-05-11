@@ -1,5 +1,4 @@
 :root {
-    /* Обновлённая цветовая палитра */
     --primary: #1a1b26;
     --secondary: #7aa2f7;
     --accent: #bb9af7;
@@ -8,7 +7,6 @@
     --success: #9ece6a;
     --error: #f7768e;
     
-    /* Новые переменные для единообразия */
     --radius: 12px;
     --shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -32,7 +30,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Навигация - улучшенная версия */
 .navbar {
     position: sticky;
     top: 0;
@@ -80,7 +77,6 @@ body {
     font-weight: 500;
 }
 
-/* Герой секция - улучшенная анимация */
 .hero {
     min-height: 100vh;
     display: grid;
@@ -91,7 +87,7 @@ body {
     background: linear-gradient(45deg, 
     var(--primary) 0%, 
     rgba(42, 47, 79, 0.9) 100%),
-    url('../img/code.jpg'); /* Путь относительно CSS файла */
+    url('../img/code.jpg');
 }
 @supports (-moz-appearance: none) {
     .hero h1 {
@@ -99,7 +95,6 @@ body {
     }
 }
 
-/* Добавить после .hero */
 .hero-subtitle {
     font-size: 1.5rem;
     color: var(--accent);
@@ -116,7 +111,6 @@ body {
     gap: 1rem;
 }
 
-/* Для карточек проектов */
 .project-card {
     background: var(--glass);
     border-radius: var(--radius);
@@ -155,7 +149,6 @@ body {
     text-wrap: balance;
 }
 
-/* Карточки - улучшенные анимации */
 .card-grid {
     display: grid;
     gap: 2rem;
@@ -183,7 +176,6 @@ body {
     box-shadow: var(--shadow);
 }
 
-/* Форма - улучшенная интерактивность */
 .contact-form {
     max-width: 600px;
     margin: 4rem auto;
@@ -211,7 +203,6 @@ body {
     box-shadow: 0 0 0 4px rgba(187, 154, 247, 0.15);
 }
 
-/* 404 Страница - улучшенная анимация */
 .error-404 {
     min-height: 100vh;
     display: grid;
@@ -238,7 +229,6 @@ body {
     animation: float 3s ease-in-out infinite;
 }
 
-/* Адаптивность - mobile-first подход */
 @media (min-width: 640px) {
     .hero {
         padding: 4rem 2rem;
@@ -261,13 +251,11 @@ body {
     }
 }
 
-/* Анимации */
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
 }
 
-/* Утилитарные классы */
 .sr-only {
     position: absolute;
     width: 1px;
